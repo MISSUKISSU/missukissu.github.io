@@ -9,9 +9,10 @@
   --font-family-header: "origamimommy", monospace;
   --line-height: 1.40rem;
   --border-thickness: 2px;
-  --text-color: #000;
+  --text-color: #29ADFF;
   --text-color-alt: #666;
-  --background-color: #fff;
+  --link-color: #FF004D;
+  --background-color: #000;
   --background-color-alt: #eee;
 
   --font-weight-normal: 500;
@@ -39,11 +40,6 @@
   box-sizing: border-box;
 }
 
-
-* + * {
-  margin-top: var(--line-height);
-}
-
 html {
   display: flex;
   width: 100%;
@@ -59,14 +55,24 @@ html {
   background-attachment: scroll;
 }
 
+header {
+  padding: 20px 80px;
+}
+
 body {
   position: relative;
   width: 100%;
   margin: 0;
-  padding: var(--line-height) 2ch;
   max-width: calc(min(80ch, round(down, 100%, 1ch)));
   line-height: var(--line-height);
-  background-color: black;
+}
+
+.content {
+  background-color: var(--background-color);
+}
+
+.content-section {
+  padding: 10px 10px 20px 20px;
 }
 
 @media screen and (max-width: 480px) {
@@ -81,7 +87,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family-header);
   font-weight: var(--font-weight-bold);
-  margin: calc(var(--line-height) * 2) 0 var(--line-height);
   line-height: var(--line-height);
 }
 
@@ -103,7 +108,11 @@ h1 {
 h2 {
   font-size: 1.5rem;
   text-transform: uppercase;
+  background-color: #330033;
+  padding: 8px 0 5px 0px;
+  text-align: center !important;
 }
+
 
 hr {
   position: relative;
@@ -129,7 +138,7 @@ a {
 }
 
 a:link, a:visited {
-  color: var(--text-color);
+  color: var(--link-color);
 }
 
 p {
@@ -376,6 +385,12 @@ label {
 
 label input {
   width: 100%;
+}
+
+.social-media-icon {
+  width: 50px;
+  height: 50px;
+  display: inline;
 }
 
 .tree, .tree ul {

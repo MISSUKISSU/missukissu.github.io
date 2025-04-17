@@ -1,0 +1,39 @@
+.slideshow-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slideshow-container img {
+  width: 100%;
+  display: none; /* Hide all images by default */
+}
+
+.slideshow-container img.active {
+  display: block; /* Show only the active image */
+}
+
+.slideshow-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.slideshow-nav button {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.slideshow-nav button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
