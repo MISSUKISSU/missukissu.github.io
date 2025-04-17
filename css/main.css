@@ -14,6 +14,7 @@
   --link-color: #FF004D;
   --background-color: #000;
   --background-color-alt: #eee;
+  --title-background-color: #330033;
 
   --font-weight-normal: 500;
   --font-weight-medium: 600;
@@ -67,6 +68,12 @@ body {
   line-height: var(--line-height);
 }
 
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: var(--title-background-color);
+}
+
 .content {
   background-color: var(--background-color);
 }
@@ -108,7 +115,7 @@ h1 {
 h2 {
   font-size: 3rem;
   text-transform: uppercase;
-  background-color: #330033;
+  background-color: var(--title-background-color);
   padding: 18px 0 10px 0px;
   text-align: center !important;
 }
