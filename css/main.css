@@ -3,10 +3,20 @@
   font-family: origamimommy;
   src: url('origamimommy.ttf');
 }
+@font-face {
+  font-family: aquarius;
+  src: url('joystix monospace.ttf');
+}
+@font-face {
+  font-family: pixelicons;
+  src: url('Pixel Icons Compilation.ttf');
+}
+
 
 :root {
-  --font-family: "JetBrains Mono", monospace;
+  --font-family: "aquarius", monospace;
   --font-family-header: "origamimommy", monospace;
+  --font-family-pixel-icons: "pixelicons", monospace;
   --line-height: 1.40rem;
   --border-thickness: 2px;
   --text-color: #29ADFF;
@@ -57,7 +67,7 @@ html {
 }
 
 header {
-  padding: 50px 80px 15px 80px;
+  padding: 25px 80px  25px 80px;
 }
 
 body {
@@ -72,6 +82,7 @@ footer {
   text-align: center;
   padding: 10px;
   background-color: var(--title-background-color);
+  margin-bottom: var(--line-height);
 }
 
 .content {
@@ -80,6 +91,14 @@ footer {
 
 .content-section {
   padding: 10px 10px 20px 20px;
+}
+
+.icon-font {
+  font-size: 1.5em;
+  font-family: var(--font-family-pixel-icons);
+  margin-left: 7px;
+  vertical-align: bottom;
+  user-select: none;
 }
 
 @media screen and (max-width: 480px) {
@@ -113,10 +132,10 @@ h1 {
   text-transform: uppercase;
 }
 h2 {
-  font-size: 3rem;
+  font-size: 3.0rem;
   text-transform: uppercase;
   background-color: var(--title-background-color);
-  padding: 18px 0 10px 0px;
+  padding: 0;
   text-align: center !important;
 }
 
@@ -277,6 +296,10 @@ figcaption {
 ul, ol {
   padding: 0;
   margin: 0 0 var(--line-height);
+}
+
+ul.no-list-style {
+  list-style-type: none;
 }
 
 ul {
