@@ -218,12 +218,6 @@ th {
   width: 100%;
 }
 
-p {
-  word-break: break-word;
-  word-wrap: break-word;
-  hyphens: auto;
-}
-
 img, video {
   display: block;
   width: 100%;
