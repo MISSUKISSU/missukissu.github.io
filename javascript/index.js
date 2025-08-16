@@ -93,8 +93,9 @@ function sortShowsByDate(shows) {
 
 function filterFutureShows(shows) {
   const now = new Date();
+  const fiveDaysAgo = new Date(now.getTime() - (5 * 24 * 60 * 60 * 1000));
   return shows.filter(show => {
-    return parseDate(show.date) >= now;
+    return parseDate(show.date) >= fiveDaysAgo;
   });
 }
 
