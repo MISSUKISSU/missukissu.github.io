@@ -18,13 +18,6 @@ const showsData = [
     link: "https://www.bugjar.com/",
   },
   {
-    date: "2025-07-25",
-    time: null,
-    city: "Almond, NY",
-    venue: "Portalburn",
-    link: "https://portalburn.org/"
-  },
-  {
     date: "2025-07-11",
     time: "9:15 PM",
     city: "Rochester, NY",
@@ -93,9 +86,8 @@ function sortShowsByDate(shows) {
 
 function filterFutureShows(shows) {
   const now = new Date();
-  const fiveDaysAgo = new Date(now.getTime() - (5 * 24 * 60 * 60 * 1000));
   return shows.filter(show => {
-    return parseDate(show.date) >= fiveDaysAgo;
+    return parseDate(show.date) >= now;
   });
 }
 
