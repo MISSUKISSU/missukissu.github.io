@@ -224,11 +224,23 @@ th {
 .width-min {
   width: 0;
 }
-.width-small {
+.width-smallest {
   width: 25%;
+}
+.width-smaller {
+  width: 30%;
+}
+.width-small {
+  width: 35%;
 }
 .width-mid {
   width: 40%;
+}
+.width-large {
+  width: 50%;
+}
+.width-larger {
+  width: 60%;
 }
 .width-auto {
   width: 100%;
